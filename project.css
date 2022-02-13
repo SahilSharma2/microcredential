@@ -1,0 +1,244 @@
+*{box-sizing: border-box;}
+html, body{
+   padding: 0;
+   margin: 0;
+}
+:root{
+  --background:rgba(20,128,196,.5);
+}
+@keyframes zoom {
+  0%{transform:scale(0.2);}
+  100%{transform:scale(1);}
+}
+@keyframes move{
+  0%{transform:translateY(700px);}
+  100%{transform:translateY(-20px);}
+}
+.cart{
+  background-color:white;
+  position:fixed;
+  border-radius: 100px;
+  right:1%;
+  color:white;
+}
+.items{
+  color: green;
+}
+body{
+  margin:0;
+  background: rgba(113,155,235,0.8);
+  font-family: "Times New Roman", Times;
+  font-weight:400;
+  background-size: cover;
+  background-color: rgba(113,155,235,0.8);
+}
+nav a{
+  color:white;
+  text-decoration: none;
+  font-size: 1.8em;
+  padding:18px;
+}
+nav a:hover{
+  color:black;
+}
+header{
+  background: var(--background);
+  text-align: center;
+  width:100%;
+}
+nav{
+  margin-top: 1%;
+}
+.bottom{
+  background:rgba(17,59,128,.7);
+  width:100%;
+  height: auto;
+}
+.slideshow{
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+  height:100%;
+  height:auto;
+}
+.wrapper{
+  width:300%;
+  height:100%;
+  animation: slideshow 5s infinite alternate;
+}
+.slide{
+  padding-top:10px;
+  padding-bottom:10px;
+  width:33.33333%;
+  display: inline-block;
+  text-align: center;
+  float:left;
+  height: 100%;
+}
+@keyframes slideshow {
+  0%{margin-left:0%;}
+  33%{margin-left:0%;}
+  35%{margin-left:-100%;}
+  66%{margin-left: -100%}
+  70%{margin-left:-200%;}
+  100%{margin-left: -200%;}
+}
+.slide:nth-child(1){
+  color:white;
+  background-color: rgba(20,194,196,0.7);
+}
+
+.slide:nth-child(2){
+  color:white;
+  background-color: rgba(20,128,196,0.7);
+}
+
+.slide:nth-child(3){
+  color:white;
+  background-color: rgba(20,70,196,0.7);
+}
+
+
+.Game{
+  height:500px;
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+.Game img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.Game p{
+  animation: move 5s forwards;
+  padding:5px;
+  top: 10px;
+  width: 50%;
+  text-align: center;
+  font-size: 1.2em;
+  color: blue;
+  background-color: rgba(113,155,235,0.8);
+  box-shadow: 10px 10px 10px darkblue;
+  border: 10px;
+  position: absolute;
+}
+.Consoles{
+  width:95%;
+  margin-left: auto;
+  margin-right: auto;
+  background:rgba(18,148,247,0.75);
+}
+.container2{
+  width: 100%;
+  text-align: center;
+}
+.console1{
+  width:31%;
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.link{
+  background-color:darkblue;
+  color:white;
+  text-decoration: none;
+  padding:10px 20px;
+}
+.link:hover{
+  background-color: white;
+  color:darkblue;
+  box-shadow: 0px 0px 3px 1px white;
+}
+.modalWindow{
+  background-color: rgba(150,150,150,0.5);
+  position:fixed;
+  top:0px;
+  opacity:0;
+  pointer-events:none;
+  bottom:0px;
+  left:0px;
+  right:0px;
+}
+.modalWindow:target{
+  opacity:1;
+  transition: ease-in 1s;
+  pointer-events: auto;
+}
+.content{
+  width:550px;
+  height:450px;
+  background-color: white;
+  margin:auto;
+  position:relative;
+  margin-top: 100px;
+}
+.close{
+  background-color: lightblue;
+  padding:5px;
+  position:absolute;
+  top:0px;
+  right:0px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+.close:hover{
+  background-color: darkblue;
+  color:white;
+}
+.info{
+  width:100%;
+  height:80%;
+  margin-top:10%;
+  position:absolute;
+}
+.info img{
+  width:40%;
+  float: left;
+  margin:0%;
+}
+.p{
+  position: absolute;
+  width:60%;
+  top:0px;
+  right:0px;
+}
+.p i{
+  font-size:1em;
+}
+.p span{
+  color:red;
+}
+.p b{
+  color:red;
+  font-size: 1em;
+}
+.p hr{
+  margin-top: 20px;
+}
+.add{
+  display:block;
+  margin-top:45px;
+  width:50%;
+  background-color: darkblue;
+  text-align: center;
+  padding:15px 0px;
+  color:lightblue;
+  text-decoration: none;
+  margin-left:auto;
+  margin-right:auto;
+  background-color: rgb(60,60,60);
+  font-weight: bold;
+}
+
+.add:hover{
+  background-color: lightblue;
+  color:rgb(60,60,60);
+}

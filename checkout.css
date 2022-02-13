@@ -1,0 +1,12 @@
+.itemlist{
+  padding:15px;
+  font-size: 2em;}
+body {background-color: rgba(20,128,196,.5)}
+h4{font-size: 2.3em;}
+h2{font-size: 3.3em;}
+.checkout1{
+  background-color: rgba(113,155,235,0.8);
+  color:rgba(17,59,128,.7);
+  text-decoration: none;
+  padding:20px 20px;
+  border-radius: 150px;}
